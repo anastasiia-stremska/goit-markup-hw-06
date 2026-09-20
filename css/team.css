@@ -1,0 +1,80 @@
+.team {
+  background: #f4f4fd;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.team-item {
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  width: 264px;
+  background: #ffffff;
+  border-radius: 0 0 4px 4px;
+}
+
+.team-content {
+  padding: 32px 16px;
+}
+
+.team-ill {
+  display: block;
+  width: 264px;
+  object-fit: cover;
+}
+
+.team-name {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.team-position {
+  margin: 8px 0 0;
+  font-weight: 400;
+  text-align: center;
+  color: #434455;
+}
+
+/* Иконки социальных сетей */
+.team .social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  padding: 0;
+  margin: 8px 0 0;
+  list-style: none;
+}
+.team .team-social-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  color: #f4f4fd;
+}
+
+.team .social-list a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms ease;
+}
+
+.team .social-list a:hover,
+.team .social-list a:focus {
+  background: #404bbf;
+}

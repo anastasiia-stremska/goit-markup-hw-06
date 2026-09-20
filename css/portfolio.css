@@ -1,0 +1,102 @@
+.portfolio {
+  background: #ffffff;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.portfolio-item {
+  width: 360px;
+  border: 1px solid #e7e9fc;
+  box-sizing: border-box;
+  box-shadow: none;
+  transition: box-shadow 250ms ease;
+}
+.portfolio-item:hover {
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+/* Область картинки + overlay */
+.portfolio-image {
+  position: relative;
+  width: 360px;
+  height: 300px;
+  overflow: hidden;
+}
+
+/* Картинка */
+.portfolio-ill {
+  display: block;
+  width: 360px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Синий блок */
+.portfolio-overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 40px 32px;
+  box-sizing: border-box;
+
+  background-color: #4d5ae5;
+
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+
+  z-index: 2;
+}
+
+/* Текст внутри синего блока */
+.portfolio-overlay p {
+  margin: 0;
+  color: #f4f4fd;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Выезд блока при наведении */
+.portfolio-item:hover .portfolio-overlay,
+.portfolio-item:focus .portfolio-overlay {
+  transform: translateY(0);
+}
+
+/* Нижняя часть карточки */
+.portfolio-content {
+  padding: 32px 16px;
+  background-color: #ffffff;
+}
+
+.portfolio-website {
+  margin: 0 0 8px;
+
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+
+  color: #2e2f42;
+}
+
+.portfolio-information {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: #434455;
+}
