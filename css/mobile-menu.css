@@ -127,6 +127,9 @@
 
   color: #2e2f42;
 }
+.mobile-menu .contacts-link[href^='mailto:'] {
+  color: #434455;
+}
 
 .mobile-menu .contacts-link[href^='tel:'] {
   color: #4d5ae5;
@@ -139,7 +142,7 @@
   align-items: center;
   gap: 40px;
 
-  margin: -48-px 0 0;
+  margin: 48px 0 0;
   padding: 0;
 
   list-style: none;
