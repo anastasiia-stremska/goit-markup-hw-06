@@ -4,19 +4,23 @@
 
 .team-list {
   display: flex;
-  gap: 24px;
-  align-items: stretch;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 .team-item {
+  width: 264px;
+
   box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  width: 264px;
+
   background: #ffffff;
   border-radius: 0 0 4px 4px;
 }
@@ -33,6 +37,7 @@
 
 .team-name {
   margin: 0;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -41,21 +46,25 @@
 
 .team-position {
   margin: 8px 0 0;
+
   font-weight: 400;
   text-align: center;
   color: #434455;
 }
 
-/* Иконки социальных сетей */
+/* ===== Социальные сети ===== */
+
 .team .social-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 24px;
+
   padding: 0;
   margin: 8px 0 0;
   list-style: none;
 }
+
 .team .team-social-icon {
   display: block;
   width: 24px;
@@ -66,15 +75,39 @@
 .team .social-list a {
   width: 40px;
   height: 40px;
+
   border-radius: 50%;
   background: #4d5ae5;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   transition: background-color 250ms ease;
 }
 
 .team .social-list a:hover,
 .team .social-list a:focus {
   background: #404bbf;
+}
+
+/* ===== Tablet 768px ===== */
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+}
+
+/* ===== Desktop 1158px ===== */
+
+@media screen and (min-width: 1158px) {
+  .team-list {
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 24px;
+  }
 }

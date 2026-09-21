@@ -26,6 +26,11 @@
         <a class="logo" href="./index.html"
           ><span class="web">WEB</span><span class="studio">STUDIO</span></a
         >
+        <button class="mobail-menu-btn" type="button">
+          <svg class="mobail-menu-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
         <nav class="main-nav">
           <ul class="main-nav-list">
             <li class="main-nav-item">
@@ -126,9 +131,12 @@
             <li class="team-item">
               <img
                 class="team-ill"
-                src="./images/team-1.jpg"
+                src="./images/team/team-1_desk.jpg"
+                srcset="
+                  ./images/team/team-1_desk.jpg    1x,
+                  ./images/team/team-1@2x_desk.jpg 2x
+                "
                 alt="Mark Guerrero"
-                width="264"
               />
               <div class="team-content">
                 <h3 class="team-name">Mark Guerrero</h3>
@@ -184,9 +192,12 @@
             <li class="team-item">
               <img
                 class="team-ill"
-                src="./images/team-2.jpg"
+                src="./images/team/team-2_desk.jpg"
+                srcset="
+                  ./images/team/team-2_desk.jpg    1x,
+                  ./images/team/team-2@2x_desk.jpg 2x
+                "
                 alt="Tom Ford"
-                width="264"
               />
               <div class="team-content">
                 <h3 class="team-name">Tom Ford</h3>
@@ -242,9 +253,12 @@
             <li class="team-item">
               <img
                 class="team-ill"
-                src="./images/team-3.jpg"
+                src="./images/team/team-3_desk.jpg"
+                srcset="
+                  ./images/team/team-3_desk.jpg    1x,
+                  ./images/team/team-3@2x_desk.jpg 2x
+                "
                 alt="Camila Garcia"
-                width="264"
               />
               <div class="team-content">
                 <h3 class="team-name">Camila Garcia</h3>
@@ -300,9 +314,12 @@
             <li class="team-item">
               <img
                 class="team-ill"
-                src="./images/team-4.jpg"
+                src="./images/team/team-4_desk.jpg"
+                srcset="
+                  ./images/team/team-4_desk.jpg    1x,
+                  ./images/team/team-4@2x_desk.jpg 2x
+                "
                 alt="Daniel Wilson"
-                width="264"
               />
               <div class="team-content">
                 <h3 class="team-name">Daniel Wilson</h3>
@@ -366,10 +383,12 @@
               <div class="portfolio-image">
                 <img
                   class="portfolio-ill"
-                  src="./images/portfolio-1.jpg"
+                  src="./images/portfolio/portfolio_desk.png"
+                  srcset="
+                    ./images/portfolio/portfolio_desk.png    1x,
+                    ./images/portfolio/portfolio_desk@2x.png 2x
+                  "
                   alt=""
-                  width="360"
-                  height="300"
                 />
                 <div class="portfolio-overlay">
                   <p>
@@ -388,10 +407,12 @@
               <div class="portfolio-image">
                 <img
                   class="portfolio-ill"
-                  src="./images/portfolio-2.jpg"
+                  src="./images/portfolio/portfolio_desk-1.png"
+                  srcset="
+                    ./images/portfolio/portfolio_desk-1.png    1x,
+                    ./images/portfolio/portfolio_desk@2x-1.png 2x
+                  "
                   alt=""
-                  width="360"
-                  height="300"
                 />
                 <div class="portfolio-overlay">
                   <p>
@@ -410,10 +431,12 @@
               <div class="portfolio-image">
                 <img
                   class="portfolio-ill"
-                  src="./images/portfolio-3.jpg"
+                  src="./images/portfolio/portfolio_desk-2.png"
+                  srcset="
+                    ./images/portfolio/portfolio_desk-2.png      1x,
+                    ./images/portfolio/portfolio_desk@2x-2.png2x
+                  "
                   alt=""
-                  width="360"
-                  height="300"
                 />
                 <div class="portfolio-overlay">
                   <p>
@@ -432,10 +455,12 @@
               <div class="portfolio-image">
                 <img
                   class="portfolio-ill"
-                  src="./images/portfolio-4.jpg"
+                  src="./images/portfolio/portfolio_desk-3.png"
+                  srcset="
+                    ./images/portfolio/portfolio_desk-3.png    1x,
+                    ./images/portfolio/portfolio_desk@2x-3.png 2x
+                  "
                   alt=""
-                  width="360"
-                  height="300"
                 />
                 <div class="portfolio-overlay">
                   <p>
@@ -454,10 +479,12 @@
               <div class="portfolio-image">
                 <img
                   class="portfolio-ill"
-                  src="./images/portfolio-5.jpg"
+                  src="./images/portfolio/portfolio_desk-4.png"
+                  srcset="
+                    ./images/portfolio/portfolio_desk-4.png    1x,
+                    ./images/portfolio/portfolio_desk@2x-4.png 2x
+                  "
                   alt=""
-                  width="360"
-                  height="300"
                 />
                 <div class="portfolio-overlay">
                   <p>
@@ -476,10 +503,12 @@
               <div class="portfolio-image">
                 <img
                   class="portfolio-ill"
-                  src="./images/portfolio-6.jpg"
+                  src="./images/portfolio/portfolio_desk-5.png"
+                  srcset="
+                    ./images/portfolio/portfolio_desk-5.png    1x,
+                    ./images/portfolio/portfolio_desk@2x-5.png 2x
+                  "
                   alt=""
-                  width="360"
-                  height="300"
                 />
                 <div class="portfolio-overlay">
                   <p>
@@ -584,6 +613,92 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu">
+      <div class="mobile-menu-container">
+        <button type="button" class="mobile-menu-btn-ison">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu-item">
+            <a href="#features" class="mobile-menu-link current"> Features </a>
+          </li>
+
+          <li class="mobile-menu-item">
+            <a href="#team" class="mobile-menu-link"> Team </a>
+          </li>
+
+          <li class="mobile-menu-item">
+            <a href="#portfolio" class="mobile-menu-link"> Portfolio </a>
+          </li>
+        </ul>
+        <address class="contacts">
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <a class="contacts-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a class="contacts-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="social-list">
+          <li>
+            <a
+              class="footer-social-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="footer-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#illustration"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-social-link"
+              href="https://x.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="footer-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#illustration-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-social-link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="footer-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#illustration-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-social-link"
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="footer-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#illustration-3"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- Modal -->
     <div class="backdrop" id="modal">
       <div class="modal">

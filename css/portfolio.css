@@ -5,43 +5,53 @@
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
+  justify-content: center;
+
+  column-gap: 0;
   row-gap: 48px;
+
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 .portfolio-item {
-  width: 360px;
+  width: 288px;
+
   border: 1px solid #e7e9fc;
   box-sizing: border-box;
+
   box-shadow: none;
   transition: box-shadow 250ms ease;
 }
+
 .portfolio-item:hover {
   box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
+
 /* Область картинки + overlay */
+
 .portfolio-image {
   position: relative;
-  width: 360px;
+  width: 288px;
   height: 300px;
   overflow: hidden;
 }
 
 /* Картинка */
+
 .portfolio-ill {
   display: block;
-  width: 360px;
+  width: 288px;
   height: 300px;
   object-fit: cover;
 }
 
 /* Синий блок */
+
 .portfolio-overlay {
   position: absolute;
   left: 0;
@@ -62,6 +72,7 @@
 }
 
 /* Текст внутри синего блока */
+
 .portfolio-overlay p {
   margin: 0;
   color: #f4f4fd;
@@ -71,12 +82,14 @@
 }
 
 /* Выезд блока при наведении */
+
 .portfolio-item:hover .portfolio-overlay,
 .portfolio-item:focus .portfolio-overlay {
   transform: translateY(0);
 }
 
 /* Нижняя часть карточки */
+
 .portfolio-content {
   padding: 32px 16px;
   background-color: #ffffff;
@@ -99,4 +112,46 @@
   line-height: 1.5;
 
   color: #434455;
+}
+
+/* ===== Tablet 768px ===== */
+
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .portfolio-item {
+    width: 356px;
+  }
+
+  .portfolio-image {
+    width: 356px;
+  }
+
+  .portfolio-ill {
+    width: 356px;
+  }
+}
+
+/* ===== Desktop 1158px ===== */
+
+@media screen and (min-width: 1158px) {
+  .portfolio-list {
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+
+  .portfolio-item {
+    width: 360px;
+  }
+
+  .portfolio-image {
+    width: 360px;
+  }
+
+  .portfolio-ill {
+    width: 360px;
+  }
 }

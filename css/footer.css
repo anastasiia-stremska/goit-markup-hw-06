@@ -1,24 +1,37 @@
+/* =========================
+   FOOTER — MOBILE 320px
+   ========================= */
+
 .footer {
   background: #2e2f42;
-  padding: 100px 0;
+  padding: 96px 0;
 }
 
 .footer .container {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   justify-content: flex-start;
+  gap: 72px;
 }
+
+/* ===== WebStudio ===== */
+
 .footer-info {
+  width: 288px;
+  height: 112px;
+
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
+  gap: 16px;
 }
 
 .footer .logo {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: row;
   gap: 0;
 }
@@ -34,61 +47,89 @@
 }
 
 .footer-conclusion {
+  width: 288px;
+  margin: 0;
+
   font-weight: 400;
   color: #f4f4fd;
-  width: 264px;
-  margin: 0;
 }
 
+/* ===== Social media ===== */
+
 .footer-social {
+  width: 208px;
+  height: 80px;
+
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin-left: 120px;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin-left: 0;
+  gap: 16px;
 }
 
 .footer-social-title {
-  margin: 0 0 16px;
+  margin: 0;
+
   font-weight: 500;
   color: #ffffff;
 }
 
 .footer .social-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 16px;
+
+  width: 208px;
+  height: 40px;
+
   padding: 0;
   margin: 0;
+
   list-style: none;
 }
+
 .footer-social-link {
   width: 40px;
   height: 40px;
+
   border-radius: 50%;
   background: #4d5ae5;
   color: #f4f4fd;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   transition: background-color 250ms ease;
 }
+
 .footer .footer-social-link:hover,
 .footer .footer-social-link:focus {
   background: #31d0aa;
 }
+
 .footer .footer-social-icon {
   display: block;
   width: 24px;
   height: 24px;
 }
+
+/* ===== Subscribe ===== */
+
 .footer-subscribe {
+  width: 288px;
+
   display: flex;
   flex-direction: column;
-  margin-left: auto;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .footer-subscribe-title {
   margin: 0 0 16px;
+
   font-weight: 500;
   color: #ffffff;
 }
@@ -96,8 +137,11 @@
 .footer-subscribe-form {
   display: flex;
   align-items: center;
-  flex-direction: row;
-  gap: 24px;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+
+  width: 288px;
 }
 
 .footer-subscribe-label {
@@ -105,8 +149,9 @@
 }
 
 .footer-subscribe-input {
-  width: 264px;
+  width: 288px;
   height: 40px;
+
   padding: 8px 16px;
 
   border: 1px solid #ffffff;
@@ -138,6 +183,7 @@
 }
 
 /* Чтобы Chrome не делал поле белым при автозаполнении */
+
 .footer-subscribe-input:-webkit-autofill,
 .footer-subscribe-input:-webkit-autofill:hover,
 .footer-subscribe-input:-webkit-autofill:focus {
@@ -164,7 +210,6 @@
   border-radius: 4px;
 
   background-color: #4d5ae5;
-
   color: #ffffff;
 
   font-family: 'Roboto', sans-serif;
@@ -188,4 +233,173 @@
   display: block;
   width: 24px;
   height: 24px;
+}
+
+/* =========================
+   FOOTER — TABLET 768px
+   ========================= */
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 96px 0;
+  }
+
+  .footer .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  /* ===== WebStudio ===== */
+
+  .footer-info {
+    width: 264px;
+    height: 112px;
+
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    gap: 16px;
+  }
+
+  .footer .logo {
+    justify-content: flex-start;
+  }
+
+  .footer-conclusion {
+    width: 264px;
+  }
+
+  /* ===== Social media ===== */
+
+  .footer-social {
+    width: 208px;
+    height: 80px;
+
+    align-items: flex-start;
+
+    margin-left: 0;
+    gap: 16px;
+  }
+
+  .footer .social-list {
+    width: 208px;
+  }
+
+  /* ===== Subscribe ===== */
+
+  .footer-subscribe {
+    width: 496px;
+
+    align-items: flex-start;
+    margin-left: 0;
+  }
+
+  .footer-subscribe-form {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 24px;
+
+    width: auto;
+  }
+
+  .footer-subscribe-input {
+    width: 264px;
+  }
+}
+
+/* =========================
+   FOOTER — DESKTOP 1158px
+   ========================= */
+
+@media screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer .container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    column-gap: 0;
+    row-gap: 0;
+  }
+
+  /* ===== WebStudio ===== */
+
+  .footer-info {
+    width: auto;
+    height: auto;
+
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    gap: 0;
+  }
+
+  .footer .logo {
+    justify-content: flex-start;
+  }
+
+  .footer-conclusion {
+    width: 264px;
+  }
+
+  /* ===== Social media ===== */
+
+  .footer-social {
+    width: auto;
+    height: auto;
+
+    align-items: flex-start;
+
+    margin-left: 120px;
+    gap: 0;
+  }
+
+  .footer-social-title {
+    margin: 0 0 16px;
+  }
+
+  .footer .social-list {
+    width: auto;
+    height: auto;
+  }
+
+  /* ===== Subscribe ===== */
+
+  .footer-subscribe {
+    flex-basis: auto;
+    width: auto;
+
+    align-items: flex-start;
+
+    margin-left: auto;
+  }
+
+  .footer-subscribe-title {
+    margin: 0 0 16px;
+  }
+
+  .footer-subscribe-form {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 24px;
+
+    width: auto;
+  }
+
+  .footer-subscribe-input {
+    width: 264px;
+  }
 }

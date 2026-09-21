@@ -1,44 +1,129 @@
 .hero {
+  width: 100%;
   max-width: 1440px;
-  margin: auto;
-  padding: 188px 0;
+  margin: 0 auto;
+  padding: 72px 0;
+
   background-color: #2e2f42;
+
   background-image:
     linear-gradient(
       180deg,
       rgba(46, 47, 66, 0.7) 0%,
       rgba(46, 47, 66, 0.7) 100%
     ),
-    url('../images/hero-bg.png');
+    url('../images/hero/hero-bg_mob.jpg');
+
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(46, 47, 66, 0.7) 0%,
+      rgba(46, 47, 66, 0.7) 100%
+    ),
+    image-set(
+      url('../images/hero/hero-bg_mob.jpg') 1x,
+      url('../images/hero/hero-bg_mob@2x.jpg') 2x
+    );
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .hero-title {
-  max-width: 500px;
-  margin: 0 auto 48px;
+  max-width: 216px;
+  margin: 0 auto 72px;
 
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07143;
+  font-size: 36px;
+  line-height: 1.11111;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
 }
+
 .btn {
   display: block;
+  width: fit-content;
   margin: 0 auto;
   padding: 16px 32px;
+
   border: none;
   border-radius: 4px;
+
   background-color: #4d5ae5;
   color: #fff;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+
   cursor: pointer;
+
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
   transition: background-color 250ms ease;
-  width: fit-content;
+}
+
+/* ===== Tablet 768px ===== */
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 112px 0;
+
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7) 0%,
+        rgba(46, 47, 66, 0.7) 100%
+      ),
+      url('../images/hero/hero-bg_tab.jpg');
+
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7) 0%,
+        rgba(46, 47, 66, 0.7) 100%
+      ),
+      image-set(
+        url('../images/hero/hero-bg_tab.jpg') 1x,
+        url('../images/hero/hero-bg_tab@2x.jpg') 2x
+      );
+  }
+
+  .hero-title {
+    max-width: 496px;
+    margin-bottom: 36px;
+
+    font-size: 56px;
+    line-height: 1.07143;
+  }
+}
+
+/* ===== Desktop 1158px ===== */
+
+@media screen and (min-width: 1158px) {
+  .hero {
+    padding: 188px 0;
+
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7) 0%,
+        rgba(46, 47, 66, 0.7) 100%
+      ),
+      url('../images/hero/hero-bg_desk.jpg');
+
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7) 0%,
+        rgba(46, 47, 66, 0.7) 100%
+      ),
+      image-set(
+        url('../images/hero/hero-bg_desk.jpg') 1x,
+        url('../images/hero/hero-bg_desk@2x.jpg') 2x
+      );
+  }
 }
