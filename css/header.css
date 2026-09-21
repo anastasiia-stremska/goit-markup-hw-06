@@ -29,6 +29,11 @@
   align-items: center;
   justify-content: center;
 }
+@media only screen and (min-width: 768px) {
+  .mobail-menu-btn {
+    display: none;
+  }
+}
 
 .mobail-menu-btn-icon {
   width: 24px;
@@ -43,6 +48,12 @@
 .main-nav {
   margin-left: 120px;
   margin-right: auto;
+}
+
+@media only screen and (min-width: 1158px) {
+  .main-nav {
+    margin-left: 76px;
+  }
 }
 @media only screen and (max-width: 767.98px) {
   .main-nav {
