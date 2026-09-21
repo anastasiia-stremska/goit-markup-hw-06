@@ -245,6 +245,9 @@
   }
 
   .footer .container {
+    width: 768px;
+    max-width: 1158px;
+    padding: 0 108px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
